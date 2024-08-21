@@ -39,19 +39,30 @@ Esta API fornece autenticação de usuário via JWT (JSON Web Token), utilizando
 ### **Estrutura de Diretórios**
 
  ```bash
-├── domain/                 # Pasta que contém as regras de negócio e a lógica principal da aplicação.
-│   └── authentication.py   # Arquivo responsável pela lógica de autenticação e geração de tokens JWT.
-├── application/            # Pasta responsável por inicializar e configurar a aplicação Flask.
-│   └── app.py              # Arquivo principal da aplicação Flask que define as rotas e inicializa o servidor.
-├── infrastructure/         # Pasta que contém os componentes de infraestrutura, como o repositório de usuários.
-│   └── user_repository.py  # Arquivo que gerencia a lógica de leitura dos dados de usuários a partir do arquivo JSON.
-├── data/                   # Pasta que contém os dados persistentes, como o arquivo de usuários.
-│   └── usuarios.json       # Arquivo que armazena os usuários e suas senhas em formato JSON para validação de login.
-├── config/                 # Pasta de configuração, onde estão os parâmetros globais da aplicação.
-│   └── config.py           # Arquivo de configuração que define as variáveis globais, como a chave secreta para JWT.
-└── run.py                  # Script que inicia a aplicação Flask quando executado.
-└── requirements.ipynb        # Arquivo com as dependências do projeto
-└── README.md               # Este arquivo README, que documenta como a aplicação funciona e como utilizá-la.
+├── application/             
+│   ├── __init__.py          # Inicialização da aplicação Flask e configuração dos Blueprints.
+│   ├── routes/              # Pasta contendo os arquivos de rotas.
+│   │   ├── __init__.py      # Inicialização das rotas.
+│   │   ├── auth_routes.py   # Rotas relacionadas à autenticação.
+│   │   ├── user_routes.py   # Rotas relacionadas a usuários.
+│   │   ├── profile_routes.py # Rotas relacionadas a perfis.
+│   │   └── permission_routes.py # Rotas relacionadas a permissões.
+├── config/                  
+│   └── config.py            # Configurações globais da aplicação usando variáveis de ambiente.
+├── domain/                  
+│   └── authentication.py    # Lógica de autenticação e geração de tokens JWT.
+├── infrastructure/          
+│   ├── base_repository.py   # Interface para os repositórios.
+│   ├── permission_repository.py # Lógica de acesso a dados de permissões.
+│   ├── profile_repository.py    # Lógica de acesso a dados de perfis.
+│   └── user_repository.py       # Lógica de acesso a dados de usuários.
+├── data/                    
+│   └── perfis.json          # Dados de perfis.
+│   └── permissoes.json      # Dados de permissões.
+│   └── usuarios.json        # Dados de usuários.
+├── run.py                   # Script que inicia a aplicação Flask.
+├── requirements.txt         # Dependências do projeto.
+└── README.md                # Documentação do projeto.
  ```
 
 
