@@ -1,0 +1,7 @@
+{
+    "perfis": [
+        {"id":1,"perfil":"gerencial","descricao": "Perfil destinado aos gestores da ferramenta"},
+        {"id":2,"perfil":"financeiro","descricao": "Perfil destinado ao time financeiro"},
+        {"id":3,"perfil":"juridico","descricao": "Perfil destinado ao time juridico"} 
+    ]
+}

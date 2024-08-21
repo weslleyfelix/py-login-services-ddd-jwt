@@ -1,0 +1,21 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "usuario": "nome1.sobrenome1",
+            "nome": "nome1",
+            "email": "nome1.sobrenome1@empresa.com.br",
+            "senha": "XPTO@23z",
+            "perfilId": 1
+        },
+        {
+            "id": 2,
+            "usuario": "nome2.sobrenome2",
+            "nome": "nome2",
+            "email": "nome2.sobrenome2@empresa.com.br",
+            "senha": "XPTO@25z",
+            "perfilId": 2
+        }
+       
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "permissoes": [
+        {"id":1,"permissaoPaiId":1,"permissao":"gerencial_admin","descricao": "Acesso irestrito incluindo: modificação e exclusão de outros usuários, gerenciamento de permissões, e configuração de todas as funcionalidades do sistema.","perfilId":1},
+        {"id":2,"permissaoPaiId":1,"permissao":"financeiro_admin","descricao": "Acesso a todas as funções do modulo financeiro","perfilId":1},        
+        {"id":3,"permissaoPaiId":2,"permissao":"financeiro_pagamentos","descricao":"Acesso as funcionalidades relacionadas ao time de contas a pagar","perfilId":2}, 
+        {"id":4,"permissaoPaiId":2,"permissao":"financeiro_recebiveis","descricao":"Acesso as funcionalidades relacionadas ao time de contas a receber","perfilId":2},
+        {"id":5,"permissaoPaiId":2,"permissao":"financeiro_conciliacao","descricao":"Acesso as funcionalidades relacionadas ao time de conciliação","perfilId":2} 
+    ]
+}
